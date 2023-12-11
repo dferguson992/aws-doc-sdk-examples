@@ -211,9 +211,9 @@ bedrock-runtime_InvokeLlama2Async:
     bedrock-runtime: {InvokeModel}
 
 bedrock-runtime_InvokeStableDiffusion:
-  title: Invoke the Stability.ai Stable Diffusion XL model on &BR; to run an inference
-  title_abbrev: Invoke Stability.ai Stable Diffusion XL on &BR;
-  synopsis: invoke the Stability.ai Stable Diffusion xl on &BR; model to run inference.
+  title: Invoke the Stable Diffusion image generation model
+  title_abbrev: Image generation with Stable Diffusion
+  synopsis: invoke the Stable Diffusion image generation model.
   category:
   languages:
     Java:
@@ -229,16 +229,24 @@ bedrock-runtime_InvokeStableDiffusion:
         - sdk_version: 3
           github: python/example_code/bedrock-runtime
           excerpts:
-            - description: Invoke the Stability.ai Stable Diffusion foundation model.
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model.
               snippet_tags:
                 - python.example_code.bedrock-runtime.InvokeStableDiffusion
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Stability.ai Stable Diffusion XL foundation model.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeStableDiffusion
   services:
     bedrock-runtime: {InvokeModel}
 
 bedrock-runtime_InvokeStableDiffusionAsync:
-  title: Asynchronously invoke the Stability.ai Stable Diffusion XL model on &BR; to run an inference
-  title_abbrev: Asynchronously invoke Stability.ai Stable Diffusion XL on &BR;
-  synopsis: asynchronously invoke the Stability.ai Stable Diffusion xl on &BR; model to run an inference.
+  title: Invoke the Stable Diffusion image generation model using the asynchronous client
+  title_abbrev: Image generation with Stable Diffusion using the async client
+  synopsis: asynchronously invoke the Stable Diffusion image generation model.
   category:
   languages:
     Java:
@@ -255,7 +263,7 @@ bedrock-runtime_InvokeStableDiffusionAsync:
 bedrock-runtime_InvokeTitanImage:
   title: Invoke Amazon Titan on &BR; to generate images
   title_abbrev: Image generation with Amazon Titan
-  synopsis: invoke the Amazon Titan on &BR; to generate images.
+  synopsis: invoke Amazon Titan on &BR; to generate images.
   category:
   languages:
     Go:
@@ -266,6 +274,47 @@ bedrock-runtime_InvokeTitanImage:
             - description: Invoke the Amazon Titan image generation model.
               snippet_tags:
                 - gov2.bedrock-runtime.InvokeTitanImage
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan image generation model.
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_titan_image.main
+    PHP:
+      versions:
+        - sdk_version: 3
+          github: php/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan image generation model.
+              snippet_tags:
+                - php.example_code.bedrock-runtime.service.invokeTitanImage
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan image generation model.
+              snippet_tags:
+                - python.example_code.bedrock-runtime.InvokeTitanImage
+  services:
+    bedrock-runtime: {InvokeModel}
+
+bedrock-runtime_InvokeTitanImageAsync:
+  title: Asynchronously invoke the Amazon Titan on &BR; to generate images
+  title_abbrev: Asynchronous image generation with Amazon Titan
+  synopsis: asynchronously invoke the Amazon Titan on &BR; to generate images.
+  category:
+  languages:
+    Java:
+      versions:
+        - sdk_version: 2
+          github: javav2/example_code/bedrock-runtime
+          excerpts:
+            - description: Invoke the Amazon Titan image generation model (async).
+              snippet_tags:
+                - bedrock-runtime.java2.invoke_titan_image_async.main
   services:
     bedrock-runtime: {InvokeModel}
 
