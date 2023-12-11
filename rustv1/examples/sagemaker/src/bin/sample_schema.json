@@ -1,0 +1,66 @@
+
+{
+  "model_overview": {
+    "model_description": "description of model",
+    "model_owner": "Owner of model",
+    "model_creator": "Creator of model",
+    "problem_type": "Problem being solved with the model",
+    "algorithm_type": "Algorithm used to solve the problem",
+    "model_id": "SageMaker Model Arn or Non SageMaker Model id",
+    "model_artifact": [],
+    "model_name": "Name of the model",
+    "model_version": 1,
+    "inference_environment": {
+      "container_image": []
+      }
+  },
+  "model_package_details": {
+    "model_package_description": "A brief summary of the model package",
+    "model_package_arn": "The Amazon Resource Name (ARN) of the model package",
+    "created_by": {
+          "user_profile_name": "The name of the user's profile in SageMaker Studio",
+    },
+    "model_package_status": "Pending",
+    "model_approval_status": "PendingManualApproval",
+    "approval_description": "A description provided for the model approval",
+    "model_package_group_name": "If the model is a versioned model, the name of the model group that the versioned model belongs to.",
+    "model_package_name": "Name of the model package",
+    "model_package_version": "Version of the model package",
+    "domain": "The machine learning domain of the model package you specified. Common machine learning domains include computer vision and natural language processing.",
+    "task": "The machine learning task you specified that your model package accomplishes. Common machine learning tasks include object detection and image classification.",
+    "source_algorithms": "A list of algorithms that were used to create a model package.",
+    "inference_specification": "Details about inference jobs that can be run with models based on this model package.",
+  },
+  "intended_uses": {
+    "purpose_of_model": "Why the model was developed?",
+    "intended_uses": "intended use cases",
+    "factors_affecting_model_efficiency": "",
+    "risk_rating": "Risk rating for model card",
+    "explanations_for_risk_rating": ""
+  },
+  "business_details": {
+    "business_problem": "What business problem does the model solve?",
+    "business_stakeholders": "Business stakeholders",
+    "line_of_business": ""
+  },
+  "training_details": {
+    "objective_function": "the objective function the model will optimize for",
+    "training_observations": "",
+    "training_arn": "SageMaker Training job arn",
+    "training_datasets": [],
+    "training_environment": {
+      "container_image": []
+    },
+    "training_metrics": [],
+    "user_provided_training_metrics": [],
+    "hyper_parameters": [],
+    "user_provided_hyper_parameters": []
+  },
+  "evaluation_details": [],
+  "additional_information": {
+    "ethical_considerations": "Any ethical considerations that the author wants to provide",
+    "caveats_and_recommendations": "Caveats and recommendations for people who might use this model in their applications.",
+    "custom_details": {}
+  }
+}                
+              
